@@ -1,133 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lumino - Dashboard</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/datepicker3.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!--Custom Font-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-    <!--topbar-->
-	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="https://monteirovj.github.io/PDG/">Personal Development Guide</a> <!--- ################### ADD LINK TO MAIN PAGE ########################--->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>My PDG</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="Personal Development Guide">
+		<meta name="author" content="Beagle Nerd">
+		<meta name="robots" content="index, follow">
+
+		<!-- icons -->
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Override CSS file - add your own CSS rules -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-heading">Personal Development Guide</h1>
 			</div>
-		</div>
-	</nav>
-    
-    <!--/.topbar-->
-    
-    <!--sidebar-->
-    
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<div class="divider"></div>
-		<ul class="nav menu">
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
-				<em class="fa fa-navicon">&nbsp;</em>My Goals <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
-				</a>
-				<ul class="children collapse" id="sub-item-1">
-					<li><a class="" href="index.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Week
-					</a></li>
-					<li><a class="" href="goalMonth.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Month
-					</a></li>
-					<li><a class="" href="goalQuarter.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Quarter
-					</a></li>
-                    <li><a class="" href="goalYear.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Year
-					</a></li>
+			<div class="nav-bar">
+				<ul class="nav">
+                    <table>
+						<tbody>
+							<tr>								
+								<td><li><a href="ProgFound.html">Progamming Foundations</a></li></td>
+								<td><li><a href="ProgAdv.html">Programming Advanced</a></li></td>
+                                <td><li><a href="CG.html">Computer Graphics</a></li></td>
+                                <td><li><a href="GameProg.html">Game Programming</a></li></td>
+                                <td><li><a href="Unity.html">Unity</a></li></td>
+							</tr>
+							<tr>								
+								<td><li><a href="GDes.html">Game Design</a></li></td>  
+								<td><li><a href="GArt.html">Game Art</a></li></td>
+                                <td><li><a href="Proj.html">Projects</a></li></td>
+                                <td><li><a href="Extras.html">Extras</a></li></td>
+                                <td><li><a href="Proc.html">Procrastination List</a></li></td>
+							</tr>
+                            <tr>								
+								<td><li><a href="Year.html">SLP3 Year</a></li></td>
+								<td><li><a href="Quarter.html">SLP3 Quarter</a></li></td>
+                                <td><li><a href="Month.html">SLP3 Month</a></li></td>
+                                <td><li><a href="index.html">Current Week</a></li></td>
+                                <td><li><a href="Maint.html">Maintenance List</a></li></td>
+							</tr>
+						</tbody>
+					</table>					
 				</ul>
-			</li>
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-2">
-				<em class="fa fa-navicon">&nbsp;</em>Programming <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="fa fa-plus"></em></span>
-				</a>
-				<ul class="children collapse" id="sub-item-2">
-					<li><a class="" href="progFound.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Foundations
-					</a></li>
-					<li><a class="" href="progAdv.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Advanced
-					</a></li>
-					<li><a class="" href="progCG.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Computer Graphics
-					</a></li>
-                    <li><a class="" href="progGame.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Games
-					</a></li>
-				</ul>
-			</li>
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-3">
-				<em class="fa fa-navicon">&nbsp;</em>Game Development <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="fa fa-plus"></em></span>
-				</a>
-				<ul class="children collapse" id="sub-item-3">
-					<li><a class="" href="devUnity.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Unity
-					</a></li>
-					<li><a class="" href="devDesign.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Game Design
-					</a></li>
-					<li><a class="" href="devArt.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Game Art
-					</a></li>
-				</ul>
-			</li>
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-4">
-				<em class="fa fa-navicon">&nbsp;</em>Other <span data-toggle="collapse" href="#sub-item-4" class="icon pull-right"><em class="fa fa-plus"></em></span>
-				</a>
-				<ul class="children collapse" id="sub-item-4">
-					<li><a class="" href="otherProjects.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Projects
-					</a></li>
-					<li><a class="" href="otherExtras.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Extras 
-					</a></li>
-					<li><a class="" href="otherProcrast.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Procrastination List
-					</a></li>
-                    <li><a class="" href="otherMaint.html">
-						<span class="fa fa-arrow-right">&nbsp;</span> Maintenance List
-					</a></li>
-				</ul>
-			</li>           
-		</ul>
-	</div>
-    
-    <!--/.sidebar-->
-		
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-		<div class="row">
-			<ol class="breadcrumb">
-				<li><a href="https://monteirovj.github.io/PDG/">              <!--- ################### ADD LINK TO MAIN PAGE ########################--->
-					<em class="fa fa-home"></em>
-				</a></li>
-				<li class="active">Programming Foundations</li>   <!--- ################### ADD PAGE TITLE ########################--->
-			</ol>
-		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Programming Foundations</h1>  <!--- ################### ADD PAGE TITLE ########################--->
 			</div>
-		</div><!--/.row-->
-        
-        <!---- HERE STARTS THE SITE ---->
-        
-        <div class="content">
+			<div class="content">
 				<div class="main">
 
+					<h1>Programming Foundations</h1>
+					<hr>
                     
 					<!-- Tables -->					
 					<table class="table table-striped">
@@ -583,20 +510,9 @@
                     <!-- End Table--->
 				</div>
 			</div>
-        
-        <!---- HERE ENDS THE SITE ---->		
-		
-        <div class="col-sm-12">
-				<p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
-        </div>
-	</div>	<!--/.main-->
-    <script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
-	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/custom.js"></script>
-</body>
+			<div class="footer">
+				
+			</div>
+		</div>
+	</body>
 </html>
